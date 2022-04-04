@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+body {
+  background-color: #ede7f6;
+  font-family: Roboto;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 15px auto;
+}
+
+.header-color {
+  background-color: rgb(103, 58, 183);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 15px;
+}
+
+section .section-1 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.between {
+  padding: 15px;
+}
+
+.section {
+  background-color: white;
+  border: 1px solid #777;
+  border-color: rgb(194, 194, 194);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-size: 15px;
+  color: rgb(46, 46, 46);
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.desc ::after {
+  content: "";
+}
+
+.account {
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.account a:link {
+  text-decoration: none;
+}
+
+.account a:visited {
+  color: blue;
+}
+
+.btnbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  background-color: #673ab8;
+  color: white;
+}
+
+.reset {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: #673ab8;
+}

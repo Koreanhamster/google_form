@@ -5,40 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <section>
-      <h1>나와 잘 맞는 회사는?</h1>
-      <p>가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.</p>
-      <p>jihyun.heo1226@gmail.com(공유되지 않음) 계정 전환</p>
-    </section>
-    <form action="http://127.0.0.1:5500/index.html" method="post">
-      <section>
-        <p>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</p>
-
-        <label for="naver">네</label>
-        <input id="naver " type="radio" name="company" value="naver" />
-
-        <label for="kakao">카</label>
-        <input id="kakao " type="radio" name="company" value="kakao" />
-
-        <label for="lineplus">라</label>
-        <input id="lineplus " type="radio" name="company" value="lineplus" />
-
-        <label for="coupang">쿠</label>
-        <input id="coupang " type="radio" name="company" value="coupang" />
-
-        <label for="baedal">베</label>
-        <input id="baedal " type="radio" name="company" value="baedal" />
-      </section>
-      <section>
-        <p>
-          친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두
-          골라주세요.
+    <section class="wrapper">
+      <div class="header-color"></div>
+      <section class="section section-1">
+        <h1 class="header">나와 잘 맞는 회사는?</h1>
+        <p class="desc">
+          가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다.
         </p>
-        <lable for="kakaotalk">카카오톡 </lable>
-        <input id="kakaotalk" type="checkbox" name="pick" value="kakaotalk" />
+        <p class="account">
+          jihyun.heo1226@gmail.com(공유되지 않음)
+          <a href="https://jihyun-hamster.tistory.com/">계정 전환</a>
+        </p>
       </section>
-    </form>
+      <form action="http://127.0.0.1:5500/index.html" method="post">
+        <section class="section section-2">
+          <p>다음 문자중에 왠지 마음에 드는 것을 하나 고르세요</p>
+          <div>
+            <input
+              id="naver "
+              type="radio"
+              name="company"
+              value="naver"
+              required
+            />
+            <label for="naver">네</label>
+          </div>
+          <div>
+            <input id="kakao " type="radio" name="company" value="kakao" />
+            <label for="kakao">카</label>
+          </div>
+          <div>
+            <input
+              id="lineplus "
+              type="radio"
+              name="company"
+              value="lineplus"
+            />
+            <label for="lineplus">라</label>
+          </div>
+          <div>
+            <input id="coupang " type="radio" name="company" value="coupang" />
+            <label for="coupang">쿠</label>
+          </div>
+          <div>
+            <input id="baedal " type="radio" name="company" value="baedal" />
+            <label for="baedal">베</label>
+          </div>
+        </section>
+        <section class="section">
+          <p>
+            친구와 문자를 합니다. 다음중 어떤 메신저를 이용하시겠습니까? 모두
+            골라주세요.
+          </p>
+          <div>
+            <input id="kakao-m" type="checkbox" name="pick" value="kakao-m" />
+            <lable for="kakao-m">카카오톡 </lable>
+          </div>
+          <div>
+            <input
+              id="lineplus-m"
+              type="checkbox"
+              name="pick"
+              value="lineplus-m"
+            />
+            <lable for="lineplus-m">라인 </lable>
+          </div>
+          <div>
+            <input
+              id="instagram-m"
+              type="checkbox"
+              name="pick"
+              value="instagram-m"
+            />
+            <lable for="instagram-m">인스타그램 디엠 </lable>
+          </div>
+          <div>
+            <input id="nateon-m" type="checkbox" name="pick" value="nateon-m" />
+            <lable for="nateon-m">네이트온 </lable>
+          </div>
+          <div>
+            <input
+              id="buddybuddy-m"
+              type="checkbox"
+              name="pick"
+              value="buddybuddy-m"
+            />
+            <lable for="buddybuddy-m">버디버디 </lable>
+          </div>
+        </section>
+        <section class="section">
+          <p>면접에서 자신의 포부를 한 문장으로 얘기한다면?</p>
+          <input type="text" placeholder="내 답변" />
+        </section>
+        <section class="section">
+          <p>
+            당신은 지금 한 기업의 최종면접을 앞두고 있습니다. 면접장에 들어가기
+            직전, 자기 자신에게 해주고 싶은말은?
+          </p>
+
+          <input type="text" placeholder="내 답변" />
+        </section>
+        <section class="section">
+          <label for="Question">다음 중 면접때 가장 듣고싶은 말은?</label></br>
+          <select name="Question" id="Question" required>
+            <option value="">선택</option>
+            <option value="fundamental">기본기가 정말 탄탄하신데요?</option>
+            <option value="work-hard">그동안 성실히 수련해오셨네요.</option>
+            <option value="inprovment">성장 가능성이 아주 커 보여요.</option>
+            <option value="money">
+              제발 우리회사로 와주세요. 연봉 얼마면되나요
+            </option>
+          </select>
+        </section>
+        <section class="section">
+          <p>취업을 희망하는 날짜를 선택해주세요.</p>
+          <label for="date">날짜</label>
+          <input id="date" type="date" />
+        </section>
+        <section class="section">
+          <p>업무를 시작 하기에 가장 적당한 시간을 고르세요</p>
+          <label for="start-date">시간</label>
+          <input type="time" id="start-date" />
+        </section>
+        <div class="btnbox">
+          <button type="submit" class="button">제출</button>
+          <button type="reset" class="reset" >양식 지우기</button> 
+        </div>
+      </form>
+    </section>
   </body>
 </html>
+`
